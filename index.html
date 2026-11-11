@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Семинар-практикум «Пирамида обучения» · 20 ноября</title>
+<meta name="description" content="20 ноября 2026, 15:30–17:30 · i-grow, Минск, ул. Шаранговича, 4. Семинар-практикум с разбором случаев и раздаточными материалами. Ведёт Лариса Александровна Кофтун. Стоимость — 40 рублей.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Семинар-практикум «Пирамида обучения» · 20 ноября">
+<meta property="og:description" content="20 ноября, 15:30–17:30 · i-grow, Минск, ул. Шаранговича, 4. Практикум с разбором случаев и раздаточными материалами. Запись на семинар.">
+<meta name="theme-color" content="#FADCD9">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -10 120 120'%3E%3Cpath fill='%23D4A64A' d='M60 4 74.6 28H45.4z'/%3E%3Cpath fill='%23A985B8' d='M43.6 31h32.8l12.2 20H31.4z'/%3E%3Cpath fill='%23804F93' d='M29.6 54h60.8l12.2 20H17.4z'/%3E%3Cpath fill='%235D2C70' d='M15.6 77h88.8L116 96H4z'/%3E%3C/svg%3E">
+<style>
+:root{--plum:#5D2C70;--plum-dark:#4B2359;--ink:#2B1636;--gold:#D4A64A;--blush:#FADCD9;--ivory:#FFF8F5;--paper:#FFFDF9;--cream:#FFF4DC;--lilac:#F6ECF8;--line:#E7CFC9;--field:#B394A6;--muted:#6B5673;--err:#B3261E}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 16px/1.55 Arial,system-ui,sans-serif}
+a{color:var(--plum)}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+
+/* ---------- Шапка ---------- */
+.hero{background:var(--blush);text-align:center;padding:40px 20px 84px}
+.emblem{display:block;width:70px;height:auto;margin:0 auto 16px}
+.badge{display:inline-block;margin:0 0 20px;padding:6px 15px;border:1.5px solid var(--gold);border-radius:999px;background:var(--paper);color:var(--plum);font-weight:700;font-size:14px;line-height:1.35}
+h1{margin:0 auto;max-width:700px;color:var(--plum);font:700 clamp(36px,8.4vw,56px)/1.06 Georgia,serif}
+h1 .kicker{display:block;margin-bottom:10px;color:var(--ink);font:700 13px/1.3 Arial,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+h1 .sub{display:block;max-width:560px;margin:12px auto 0;color:var(--ink);font:italic 400 clamp(19px,4.6vw,24px)/1.3 Georgia,serif}
+.info{max-width:600px;margin:28px auto 0;text-align:left;background:var(--paper);border:2px solid var(--gold);border-radius:18px;padding:18px 20px}
+.info p{margin:0}
+.info p+p{margin-top:9px}
+.info b{color:var(--plum)}
+.info .date{text-align:center;padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid var(--gold);color:var(--plum);font:700 27px/1.2 Georgia,serif}
+.info .date span{display:block;margin-top:3px;font-size:21px}
+.seats{max-width:600px;margin:14px auto 0;padding:10px 16px;border:2px solid var(--gold);border-radius:999px;background:var(--paper);color:var(--plum);font-weight:700}
+.seats b{font-size:20px}
+.seats.clickable{cursor:pointer}
+.seats.clickable b{font-size:16px;text-decoration:underline dotted}
+.seats:focus-visible{outline:3px solid var(--plum);outline-offset:2px}
+
+/* ---------- Карточки ---------- */
+main{max-width:670px;margin:-48px auto 56px;padding:0 16px}
+.card{background:#fff;border-radius:22px;padding:30px 26px;box-shadow:0 12px 40px rgba(93,44,112,.14)}
+.card+.card,#zapis+.card{margin-top:22px}
+h2{margin:0 0 10px;color:var(--plum);font:700 29px/1.15 Georgia,serif}
+h2:focus{outline:none}
+.intro{margin:0 0 22px;color:var(--muted)}
+
+/* ---------- Форма ---------- */
+.f{margin:0 0 20px}
+label{display:block;font-weight:700;margin-bottom:7px}
+input[type=text],input[type=tel]{display:block;width:100%;font:inherit;padding:13px 14px;border:1.5px solid var(--field);border-radius:12px;background:var(--ivory);color:var(--ink)}
+input::placeholder{color:#8E7A94;opacity:1}
+input:focus-visible{outline:3px solid var(--gold);outline-offset:1px;border-color:var(--plum)}
+.hint{font-size:14px;color:var(--muted);margin:6px 0 0}
+.nw{white-space:nowrap}
+.err{display:none;color:var(--err);font-size:14px;font-weight:700;margin:6px 0 0}
+.bad .err{display:block}
+.bad input[type=text],.bad input[type=tel],.bad .opt{border-color:var(--err);border-width:2px}
+.note{background:var(--cream);border:2px solid var(--gold);border-radius:16px;padding:15px 18px;margin:0 0 22px}
+.note strong{color:var(--plum)}
+.note p{margin:0}
+.note p+p{margin-top:6px}
+.opt{display:flex;align-items:flex-start;gap:11px;padding:12px 14px;border:1.5px solid var(--field);border-radius:12px;cursor:pointer;font-weight:400;margin:0}
+.opt:has(input:checked){border-color:var(--plum);background:var(--lilac)}
+.opt input{accent-color:var(--plum);width:20px;height:20px;margin:2px 0 0;flex:none}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+button{display:block;width:100%;font:700 18px/1.3 Arial,system-ui,sans-serif;color:#fff;background:var(--plum);border:0;border-radius:14px;padding:16px;cursor:pointer;margin-top:6px}
+button:hover{background:var(--plum-dark)}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+button:disabled{opacity:.65;cursor:wait}
+#fail{color:var(--err);font-weight:700;margin:14px 0 0;text-align:center}
+
+/* ---------- Экран «Спасибо» ---------- */
+.done{border:2px solid var(--gold);padding:34px 24px;text-align:center}
+.done h2{font-size:31px}
+.done>p{margin:0 0 16px}
+.done .note{text-align:left;margin:0 0 6px}
+.done-icon{display:block;width:62px;height:62px;margin:0 auto 14px}
+.done button{background:#fff;color:var(--plum);border:2px solid var(--plum);margin-top:18px}
+.done button:hover{background:var(--lilac)}
+
+/* ---------- О спикере ---------- */
+.speaker{display:flex;flex-wrap:wrap;align-items:center;gap:10px 15px;margin:0 0 16px}
+.speaker .who{flex:1 1 190px;min-width:0}
+.avatar{flex:none;display:grid;place-items:center;width:66px;height:66px;margin:5px;border-radius:50%;background:var(--plum);color:#fff;font:700 24px/1 Georgia,serif;letter-spacing:.02em;box-shadow:0 0 0 3px #fff,0 0 0 5px var(--gold)}
+.speaker p{margin:0}
+.speaker .name{color:var(--plum);font:700 22px/1.2 Georgia,serif}
+.speaker .role{color:var(--muted);margin-top:3px}
+.about>p{margin:0 0 12px}
+.about h3{margin:24px 0 8px;color:var(--plum);font:700 21px/1.25 Georgia,serif}
+.links{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
+.links a{display:flex;align-items:center;gap:13px;padding:13px 15px;border:1.5px solid var(--line);border-radius:14px;background:var(--ivory);color:var(--ink);text-decoration:none}
+.links a:hover{border-color:var(--plum);background:var(--lilac)}
+.links .n{flex:none;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--plum);color:#fff;font-weight:700}
+.links .t{flex:1;min-width:0}
+.links .t b{display:block;color:var(--plum)}
+.links .go{flex:none;color:var(--plum);font-size:20px;font-weight:700}
+.cta{display:block;margin:24px 0 0;padding:14px 16px;border:2px solid var(--plum);border-radius:14px;color:var(--plum);font-weight:700;font-size:17px;text-align:center;text-decoration:none}
+.cta:hover{background:var(--lilac)}
+
+@media (max-width:480px){
+  .hero{padding:32px 16px 76px}
+  .card{padding:25px 18px}
+  .done{padding:30px 18px}
+  .info{padding:16px 16px}
+  .info .date{font-size:25px}
+  .info .date span{font-size:20px}
+  h2{font-size:26px}
+  .done h2{font-size:28px}
+  .speaker{gap:10px 12px}
+  .speaker .name{font-size:20px}
+  .avatar{width:56px;height:56px;font-size:21px}
+}
+@media (max-width:350px){
+  .badge{font-size:13px;padding:6px 11px}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <svg class="emblem" viewBox="0 0 120 100" role="img" aria-label="Пирамида обучения">
+    <path fill="#D4A64A" d="M60 4 74.6 28H45.4z"/>
+    <path fill="#A985B8" d="M43.6 31h32.8l12.2 20H31.4z"/>
+    <path fill="#804F93" d="M29.6 54h60.8l12.2 20H17.4z"/>
+    <path fill="#5D2C70" d="M15.6 77h88.8L116 96H4z"/>
+  </svg>
+  <p class="badge">20&nbsp;ноября — Всемирный день ребёнка</p>
+  <h1><span class="kicker">Семинар-практикум</span>Пирамида обучения<span class="sub">от&nbsp;сенсорного фундамента к&nbsp;академическим навыкам</span></h1>
+
+  <div class="info">
+    <p class="date">20&nbsp;ноября 2026&nbsp;года<span>пятница · 15:30–17:30</span></p>
+    <p><b>Место:</b> <a href="https://yandex.by/maps/org/igrow_by/32572105523/" target="_blank" rel="noopener">i-grow, г.&nbsp;Минск, ул.&nbsp;Шаранговича,&nbsp;4</a></p>
+    <p><b>Формат:</b> 2&nbsp;часа, практикум с&nbsp;разбором случаев, раздаточные материалы</p>
+    <p><b>Ведёт:</b> Лариса Александровна Кофтун, основатель сети центров «Ласточка»</p>
+    <p><b>Стоимость:</b> 40&nbsp;рублей</p>
+  </div>
+
+  <p class="seats" id="seatsBox" aria-live="polite">🪑 Свободных мест: <b id="seatsLeft">…</b> из <span id="seatsTotal">60</span></p>
+</header>
+
+<main>
+<div id="zapis">
+<form class="card" id="form" novalidate>
+  <h2>Запись на семинар</h2>
+  <p class="intro">Одна анкета — один участник. Заполнение займёт меньше минуты.</p>
+
+  <div class="note" id="reserveBanner" hidden>
+    <p><strong>Основные места уже заняты.</strong> Заявку всё ещё можно отправить <b>в&nbsp;резерв</b>: если место освободится, мы обязательно с&nbsp;вами свяжемся.</p>
+  </div>
+
+  <div class="note">
+    <p><strong>Стоимость участия — 40&nbsp;рублей.</strong></p>
+    <p id="payNormal">Оплата — по&nbsp;реквизитам, которые мы пришлём вам в&nbsp;личные сообщения после записи.</p>
+    <p id="payReserve" hidden>Оплачивать нужно будет, только если для вас освободится место: тогда мы пришлём реквизиты в&nbsp;личные сообщения.</p>
+  </div>
+
+  <div class="f" data-f="fio">
+    <label for="fio">ФИО</label>
+    <input type="text" id="fio" name="fio" autocomplete="name" autocapitalize="words" spellcheck="false" maxlength="120" placeholder="Иванова Мария Ивановна" aria-describedby="fioHint fioErr">
+    <p class="hint" id="fioHint">Фамилия Имя Отчество — полностью, в&nbsp;таком порядке.</p>
+    <p class="err" id="fioErr">Укажите фамилию, имя и отчество полностью, через пробел.</p>
+  </div>
+
+  <div class="f" data-f="phone">
+    <label for="phone">Телефон</label>
+    <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" maxlength="24" placeholder="+375-29-123-45-67" aria-describedby="phoneHint phoneErr">
+    <p class="hint" id="phoneHint">Формат: <span class="nw">+375-00-000-00-00</span>. По&nbsp;этому номеру мы свяжемся с&nbsp;вами.</p>
+    <p class="err" id="phoneErr">Укажите телефон полностью в&nbsp;формате <span class="nw">+375-00-000-00-00</span>.</p>
+  </div>
+
+  <!-- Скрытое поле-ловушка для спам-ботов. Не трогать и не переименовывать. -->
+  <input class="hp" type="text" id="website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+  <div class="f" data-f="consent">
+    <label class="opt"><input type="checkbox" id="consent" aria-describedby="consentErr"> <span>Даю согласие на обработку моих персональных данных для организации семинара.</span></label>
+    <p class="err" id="consentErr">Поставьте галочку, чтобы отправить заявку.</p>
+  </div>
+
+  <button type="submit" id="send">Записаться на семинар</button>
+  <p id="fail" role="alert" hidden></p>
+  <noscript><p class="err" style="display:block;text-align:center">Чтобы записаться, включите JavaScript в браузере.</p></noscript>
+</form>
+
+<section class="card done" id="done" aria-live="polite" hidden>
+  <svg class="done-icon" id="iconOk" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#5D2C70"/><path d="M19 33.5l9 9L46 23.5" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <svg class="done-icon" id="iconReserve" viewBox="0 0 64 64" aria-hidden="true" hidden><circle cx="32" cy="32" r="30" fill="#D4A64A"/><path d="M32 17v16l10 7" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <h2 id="doneTitle" tabindex="-1">Спасибо, заявка принята!</h2>
+  <p id="doneText"></p>
+  <div class="note" id="donePay">
+    <p><strong>Стоимость участия — 40&nbsp;рублей.</strong></p>
+    <p>Реквизиты для оплаты мы пришлём вам в&nbsp;личные сообщения.</p>
+  </div>
+  <button type="button" id="again">Записать ещё одного участника</button>
+</section>
+</div>
+
+<section class="card about" aria-labelledby="aboutTitle">
+  <h2 id="aboutTitle">Кто проводит семинар</h2>
+  <div class="speaker">
+    <div class="avatar" aria-hidden="true">ЛК</div>
+    <div class="who">
+      <p class="name">Лариса Александровна Кофтун</p>
+      <p class="role">Основатель сети центров «Ласточка»</p>
+    </div>
+  </div>
+  <p>Лариса Александровна — <b>клинический психолог, нейропсихолог, нейролингвист и диагност</b> с&nbsp;огромным практическим опытом. Она постоянно учится (недавно прошла курсы в&nbsp;центре «Норма Плюс» и уникальное обучение методике BDA в&nbsp;Минске) и работает по принципам доказательной медицины.</p>
+
+  <h3>💡 Почему Ларисе Александровне можно доверять?</h3>
+  <p>Потому что Лариса Александровна — практик до мозга костей. <b>Весь материал — это авторская работа.</b> Лариса Александровна создаёт его вручную, не используя шаблоны, перерабатывая горы литературы и учитывая самые последние исследования в&nbsp;области нейропсихологии.</p>
+
+  <h3>🎁 Специально для вас — две полезные ссылки</h3>
+  <ul class="links">
+    <li><a href="https://t.me/NeuroSwallowCenter/6" target="_blank" rel="noopener">
+      <span class="n" aria-hidden="true">1</span>
+      <span class="t"><b>Библиотека материалов</b>которые готовит сама Лариса Александровна</span>
+      <span class="go" aria-hidden="true">→</span></a></li>
+    <li><a href="https://t.me/NeuroSwallowCenter/7" target="_blank" rel="noopener">
+      <span class="n" aria-hidden="true">2</span>
+      <span class="t"><b>Подробные видео с&nbsp;коррекционных занятий</b>смотрите, как это работает на практике</span>
+      <span class="go" aria-hidden="true">→</span></a></li>
+  </ul>
+
+  <a class="cta" href="#zapis">Записаться на семинар ↑</a>
+</section>
+</main>
+
+<script>
+/* ================================================================
+   НАСТРОЙКИ ФОРМЫ
+   Лимит мест, название вкладки и список колонок хранятся в Code.gs
+   (общий Apps Script таблицы «Заявки ДЛЯ НЕЕ 2026/2027»).
+   ================================================================ */
+const CONFIG = {
+  // Ссылка общего веб-приложения Google — одна на все формы. Не менять.
+  scriptUrl: 'https://script.google.com/macros/s/AKfycby6f8oJWYXJirDjXmvE0cEXWFj0a7bZn9KNPa9qDId6ekyx0MSsb_EUz8rvoALw3aaS/exec',
+
+  // Постоянный ID мероприятия. Должен совпадать с ключом в EVENTS (Code.gs).
+  eventId: 'seminar-piramida-2026-11-20',
+
+  // Только для первого показа счётчика, пока сервер не ответил.
+  seats: 60,
+
+  eventDateTime: '20.11.2026, 15:30–17:30',
+  eventPlace: 'i-grow, г. Минск, ул. Шаранговича, 4'
+};
+
+const TEXT = {
+  send: 'Записаться на семинар',
+  sendReserve: 'Записаться в резерв',
+  sending: 'Отправляем…',
+  sendingSlow: 'Отправляем… Пожалуйста, подождите ещё немного',
+  fail: 'Не удалось отправить заявку. Проверьте интернет и попробуйте ещё раз.',
+  failNotActive: 'Запись на этот семинар ещё не открыта. (Организатору: нужно опубликовать новую версию Code.gs в Apps Script.)',
+  doneOkTitle: 'Вы записаны на семинар!',
+  doneOk: 'Ждём вас 20 ноября в 15:30 в i-grow (г. Минск, ул. Шаранговича, 4).',
+  doneReserveTitle: 'Вы записаны в резерв',
+  doneReserve: 'Все места уже заняты. Если место освободится, мы обязательно с вами свяжемся. Оплачивать пока ничего не нужно.'
+};
+/* ================================================================ */
+
+const $ = id => document.getElementById(id);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const words = text => text.trim().split(/\s+/).filter(Boolean);
+const nameOk = text => /^[\p{L}\-'’.\s]+$/u.test(text);
+const PHONE_RE = /^\+375-\d{2}-\d{3}-\d{2}-\d{2}$/;
+const smooth = () => (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) ? 'auto' : 'smooth';
+
+function mark(key, bad) {
+  const box = document.querySelector('[data-f="' + key + '"]');
+  box.classList.toggle('bad', bad);
+  const control = box.querySelector('input');
+  if (bad) control.setAttribute('aria-invalid', 'true');
+  else control.removeAttribute('aria-invalid');
+}
+
+/* ---------- Счётчик мест: единственный источник правды — сервер ---------- */
+let submitting = false;
+let seatsFull = false;
+let counterCycle = 0;
+let counterStartedAt = 0;
+const CACHE_KEY = 'seats_' + CONFIG.eventId;
+const CACHE_TTL = 60 * 1000;            // кэш — только запасной вариант, не дольше минуты
+const RETRY_DELAYS = [0, 5000, 20000];
+
+function cacheGet() {
+  try {
+    const value = JSON.parse(localStorage.getItem(CACHE_KEY));
+    return value && Number.isFinite(value.left) && Date.now() - value.t < CACHE_TTL ? value : null;
+  } catch (_) { return null; }
+}
+function cachePut(left) {
+  try { localStorage.setItem(CACHE_KEY, JSON.stringify({ left, t: Date.now() })); } catch (_) {}
+}
+
+async function getJson(url, timeout = 8000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeout);
+  try {
+    const response = await fetch(url, { cache: 'no-store', signal: controller.signal });
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    return await response.json();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+function renderSeatsState() {
+  $('reserveBanner').hidden = !seatsFull;
+  $('payNormal').hidden = seatsFull;
+  $('payReserve').hidden = !seatsFull;
+  if (!submitting) $('send').textContent = seatsFull ? TEXT.sendReserve : TEXT.send;
+}
+
+function applyLeft(left) {
+  seatsFull = left <= 0;
+  $('seatsLeft').textContent = left;
+  renderSeatsState();
+}
+
+function setCounterClickable(on) {
+  const box = $('seatsBox');
+  box.classList.toggle('clickable', on);
+  if (on) {
+    box.setAttribute('role', 'button');
+    box.setAttribute('tabindex', '0');
+    box.title = 'Нажмите, чтобы обновить счётчик';
+  } else {
+    box.removeAttribute('role');
+    box.removeAttribute('tabindex');
+    box.removeAttribute('title');
+  }
+}
+
+async function loadCounter() {
+  if (submitting) return;
+  const cycle = ++counterCycle;
+  counterStartedAt = Date.now();
+  setCounterClickable(false);
+
+  // Сразу показываем недавнее значение, но затем обязательно спрашиваем сервер.
+  const cached = cacheGet();
+  if (cached) applyLeft(cached.left);
+  else if (!/^\d+$/.test($('seatsLeft').textContent)) $('seatsLeft').textContent = '…';
+
+  for (let i = 0; i < RETRY_DELAYS.length; i++) {
+    if (i) await sleep(RETRY_DELAYS[i]);
+    if (cycle !== counterCycle || submitting) return;
+    try {
+      const url = new URL(CONFIG.scriptUrl);
+      url.searchParams.set('action', 'count');
+      url.searchParams.set('event', CONFIG.eventId);
+      url.searchParams.set('_ts', String(Date.now()));
+      const data = await getJson(url.toString());
+      if (cycle !== counterCycle) return;
+      if (data.result !== 'ok' || data.available === null || !Number.isFinite(Number(data.available))) {
+        throw new Error(data.message || 'Некорректный ответ счётчика');
+      }
+      const capacity = Number(data.capacity);
+      const left = Math.max(0, Number(data.available));
+      if (Number.isFinite(capacity) && capacity > 0) $('seatsTotal').textContent = capacity;
+      cachePut(left);
+      applyLeft(left);
+      return;
+    } catch (error) {
+      console.warn('Не удалось обновить счётчик:', error);
+    }
+  }
+
+  if (cycle !== counterCycle) return;
+  if (!/^\d+$/.test($('seatsLeft').textContent)) $('seatsLeft').textContent = 'обновить ↻';
+  setCounterClickable(true);
+}
+
+$('seatsBox').addEventListener('click', () => {
+  if ($('seatsBox').classList.contains('clickable') && !submitting) loadCounter();
+});
+$('seatsBox').addEventListener('keydown', event => {
+  if ((event.key === 'Enter' || event.key === ' ') && $('seatsBox').classList.contains('clickable')) {
+    event.preventDefault();
+    if (!submitting) loadCounter();
+  }
+});
+// Фоновое обновление: при возврате на вкладку браузер шлёт сразу несколько событий,
+// поэтому спрашиваем сервер не чаще одного раза в 5 секунд.
+function refreshCounter() {
+  if (document.hidden || Date.now() - counterStartedAt < 5000) return;
+  loadCounter();
+}
+window.addEventListener('focus', refreshCounter);
+window.addEventListener('online', refreshCounter);
+document.addEventListener('visibilitychange', refreshCounter);
+setInterval(refreshCounter, 60000);
+$('seatsTotal').textContent = CONFIG.seats;
+loadCounter();
+
+/* ---------- Телефон: маска +375-XX-XXX-XX-XX ---------- */
+// Возвращает 9 цифр номера без кода страны. Убирает «375» (в том числе набранный
+// повторно), «80» и «0» перед кодом оператора (8-029…, 029…) — с этих цифр
+// белорусские коды не начинаются.
+function splitPhoneDigits(value) {
+  let digits = String(value).replace(/\D/g, '');
+  let prefix = 0;
+  for (let i = 0; i < 4; i++) {
+    if (digits.startsWith('375')) { digits = digits.slice(3); prefix += 3; }
+    else if (digits.startsWith('80')) { digits = digits.slice(2); prefix += 2; }
+    else if (digits.startsWith('0')) { digits = digits.slice(1); prefix += 1; }
+    else break;
+  }
+  return { local: digits.slice(0, 9), prefix };
+}
+function formatLocalDigits(local) {
+  const groups = [local.slice(0, 2), local.slice(2, 5), local.slice(5, 7), local.slice(7, 9)].filter(Boolean);
+  return '+375' + (groups.length ? '-' + groups.join('-') : '-');
+}
+function formatBelarusPhone(value) {
+  return formatLocalDigits(splitPhoneDigits(value).local);
+}
+
+const phoneInput = $('phone');
+phoneInput.addEventListener('input', () => {
+  const raw = phoneInput.value;
+  const caret = phoneInput.selectionStart == null ? raw.length : phoneInput.selectionStart;
+  const caretAtEnd = caret >= raw.length;
+  const { local, prefix } = splitPhoneDigits(raw);
+  const formatted = formatLocalDigits(local);
+  phoneInput.value = formatted;
+
+  if (!caretAtEnd && document.activeElement === phoneInput) {
+    // Сохраняем положение курсора при правке цифры в середине номера.
+    const digitsBefore = Math.max(0, raw.slice(0, caret).replace(/\D/g, '').length - prefix);
+    let position = 5;                      // сразу после «+375-»
+    for (let seen = 0, i = 5; i < formatted.length && seen < digitsBefore; i++) {
+      if (/\d/.test(formatted[i])) seen++;
+      position = i + 1;
+    }
+    position = Math.min(position, formatted.length);
+    try { phoneInput.setSelectionRange(position, position); } catch (_) {}
+  }
+  mark('phone', false);
+});
+phoneInput.addEventListener('focus', () => {
+  if (!phoneInput.value) phoneInput.value = '+375-';
+});
+phoneInput.addEventListener('blur', () => {
+  if (!splitPhoneDigits(phoneInput.value).local) phoneInput.value = '';
+});
+
+$('fio').addEventListener('input', () => mark('fio', false));
+$('consent').addEventListener('change', () => mark('consent', false));
+
+/* ---------- Отправка ---------- */
+async function submitForm() {
+  if (submitting) return;
+
+  const fio = $('fio').value.replace(/\s+/g, ' ').trim();
+  const phone = splitPhoneDigits($('phone').value).local ? formatBelarusPhone($('phone').value) : '';
+  $('phone').value = phone;
+
+  const checks = {
+    fio: words(fio).length >= 3 && nameOk(fio),
+    phone: PHONE_RE.test(phone),
+    consent: $('consent').checked
+  };
+
+  let firstBad = null;
+  for (const key in checks) {
+    mark(key, !checks[key]);
+    if (!checks[key] && !firstBad) firstBad = key;
+  }
+  if (firstBad) {
+    const box = document.querySelector('[data-f="' + firstBad + '"]');
+    box.scrollIntoView({ block: 'center', behavior: smooth() });
+    box.querySelector('input').focus({ preventScroll: true });
+    return;
+  }
+
+  const payload = {
+    _event: CONFIG.eventId,
+    'ФИО': fio,
+    'Телефон': phone,
+    'Количество участников': 1,
+    'Дата и время мероприятия': CONFIG.eventDateTime,
+    'Место': CONFIG.eventPlace,
+    website: $('website').value
+  };
+
+  const button = $('send');
+  submitting = true;
+  button.disabled = true;
+  button.textContent = TEXT.sending;
+  $('fail').hidden = true;
+
+  // Google иногда отвечает медленно — через 10 секунд подсказываем, что всё в порядке.
+  const slowTimer = setTimeout(() => {
+    if (submitting) button.textContent = TEXT.sendingSlow;
+  }, 10000);
+
+  try {
+    // Без no-cors: нужен настоящий ответ сервера — «зарегистрирован» или «резерв».
+    // Content-Type text/plain не вызывает предварительный (preflight) запрос.
+    const response = await fetch(CONFIG.scriptUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload)
+    });
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+
+    const result = await response.json();
+    if (result.result !== 'ok' || !result.status) {
+      throw new Error(result.message || 'Сервер не подтвердил заявку');
+    }
+
+    // Статус определяет сервер под блокировкой, а не счётчик на странице.
+    if (result.available !== null && result.available !== undefined && Number.isFinite(Number(result.available))) {
+      const capacity = Number(result.capacity);
+      const left = Math.max(0, Number(result.available));
+      if (Number.isFinite(capacity) && capacity > 0) $('seatsTotal').textContent = capacity;
+      counterCycle++;                      // отменяем возможный параллельный опрос счётчика
+      cachePut(left);
+      applyLeft(left);
+    }
+
+    const reserve = result.status === 'резерв';
+    $('doneTitle').textContent = reserve ? TEXT.doneReserveTitle : TEXT.doneOkTitle;
+    $('doneText').textContent = reserve ? TEXT.doneReserve : TEXT.doneOk;
+    $('iconOk').toggleAttribute('hidden', reserve);
+    $('iconReserve').toggleAttribute('hidden', !reserve);
+    $('donePay').hidden = reserve;
+
+    $('form').hidden = true;
+    $('done').hidden = false;
+    $('done').scrollIntoView({ block: 'center', behavior: smooth() });
+    $('doneTitle').focus({ preventScroll: true });
+  } catch (error) {
+    console.error(error);
+    const notActive = error && typeof error.message === 'string' && error.message.includes('Неизвестное мероприятие');
+    $('fail').textContent = notActive ? TEXT.failNotActive : TEXT.fail;
+    $('fail').hidden = false;
+  } finally {
+    submitting = false;
+    clearTimeout(slowTimer);
+    button.disabled = false;
+    renderSeatsState();
+  }
+}
+
+// Слушаем и нажатие кнопки, и отправку формы: Enter в поле «нажимает» кнопку сам,
+// а в окне предпросмотра (песочница) браузер блокирует обычную отправку формы.
+$('send').addEventListener('click', event => { event.preventDefault(); submitForm(); });
+$('form').addEventListener('submit', event => { event.preventDefault(); submitForm(); });
+
+/* ---------- «Записать ещё одного участника» ---------- */
+$('again').addEventListener('click', () => {
+  $('form').reset();
+  for (const key of ['fio', 'phone', 'consent']) mark(key, false);
+  $('fail').hidden = true;
+  $('done').hidden = true;
+  $('form').hidden = false;
+  renderSeatsState();
+  loadCounter();
+  $('zapis').scrollIntoView({ block: 'start', behavior: smooth() });
+  $('fio').focus({ preventScroll: true });
+});
+</script>
+</body>
+</html>
